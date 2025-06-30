@@ -207,7 +207,7 @@ main>section {
 
 
 #home .left-side h1 {
-    width: min(35vw, 640px);
+    white-space: nowrap;
     /* font-size: min(3.5vw, 40pt); */
     font-size: clamp(1rem, 3vw, 3.3rem);
 
