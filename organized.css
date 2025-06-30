@@ -1,5 +1,5 @@
 :root {
-    --background-color-light: white;
+    --background-color-light: #f5f5f5;
     --background-color-dark: black;
 
     --primary-color: rgb(0, 0, 0);
@@ -163,11 +163,59 @@ main>section {
     scroll-margin-top: var(--main-header-height);
     width: 100vw;
     height: auto;
-    max-height: 900px;
+    /* max-height: 900px; */
     margin: 2vw 0;
     /* border-bottom: 1px solid #000; */
     /* padding-top: var(--main-header-height); */
+    position: relative;
+    margin-top: 70px;
+    padding: 0 20px;
 }
+
+main>section>h1.section-title span {
+    position: sticky;
+    top: calc(var(--main-header-height));
+    z-index: 100;
+    /* left: 2vw; */
+    background-color: var(--background-color-light);
+    width: 100vw;
+    display: block;
+    left: 50px;
+    border-radius: 4px;
+    color: var(--secondary-color);
+    font-size: clamp(2rem, 2vw, 2.2rem);
+    /* margin-bottom: 30px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid; */
+    text-align: center;
+}
+
+main>section>h1.section-title {
+    /* position: absolute;
+    top: -80px; */
+    position: absolute;
+    top: -80px;
+    text-align: center;
+    left: 0;
+    margin: 0;
+
+
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    /* animation: colorAnimation 10s linear infinite; */
+}
+
+/* main section h1.section-title {
+    place-self: center;
+    color: var(--secondary-color);
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 30px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    animation: colorAnimation 10s linear infinite;
+} */
+
 
 /* home */
 #home {
@@ -175,6 +223,7 @@ main>section {
     align-items: center;
     justify-content: center;
     gap: min(4vw, 300px);
+    margin-top: 0;
 }
 
 /* left-side */
@@ -258,18 +307,6 @@ main>section {
     object-fit: cover;
 }
 
-
-
-main section h1.section-title {
-    place-self: center;
-    color: var(--secondary-color);
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-bottom: 30px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    animation: colorAnimation 10s linear infinite;
-}
-
 /* @keyframes borderBottomAnimation {
 
     0%,
@@ -283,21 +320,18 @@ main section h1.section-title {
 } */
 
 /* about */
-#about {
-    height: calc(0px + fit-content);
-}
+#about {}
 
-#about .container {
+#about {
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
     gap: 2vw;
 }
 
-#about .container .images {
+#about .images {
     align-self: flex-start;
     display: grid;
     width: fit-content;
@@ -310,7 +344,7 @@ main section h1.section-title {
     overflow: hidden;
 }
 
-#about .container .images img {
+#about .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -323,6 +357,7 @@ main section h1.section-title {
     justify-content: center;
     flex: 3;
     gap: 15px;
+    max-width: 700px;
 }
 
 #about section.text h1 {
@@ -333,11 +368,85 @@ main section h1.section-title {
 #about section.text p {
     text-align: justify;
     display: inline-block;
-    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     line-height: 1.4;
 }
 
 #about section.text p span.first {
-    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     font-weight: bold;
 }
+
+/* education */
+#education {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 60px;
+    /* if you change the padding - you'll affect the dots / lines */
+    position: relative;
+}
+
+#education>section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* dots */
+#education>section::before {
+    content: '';
+    padding: 7px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: -27px;
+    top: 0;
+}
+
+/* left line */
+#education::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #aaa;
+    z-index: -1;
+    left: 39px;
+}
+
+/* right line */
+#education::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #aaa;
+    z-index: -1;
+    left: calc(50% + 4px);
+}
+
+#education section h4.years {
+    color: var(--secondary-color);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+}
+
+#education section h1.education-type {
+    font-size: clamp(1.3rem, 1.3vw, 1.5rem);
+    margin-bottom: 8px;
+}
+
+#education section ul {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+#education section ul li {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    ;
+}
+
+#education>section * {}
