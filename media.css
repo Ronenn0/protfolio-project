@@ -78,14 +78,6 @@
         padding: 10px;
     }
 
-    /* #hamburger-checkbox:checked~nav ul li {} */
-
-    /* #hamburger-checkbox:checked~nav ul li a {} */
-
-    /* #home {
-        height: auto;
-    } */
-
     #home .left-side {
         flex: 0.5;
     }
