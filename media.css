@@ -172,6 +172,16 @@
     }
 
     .main-header nav {
-        width: 30%;
+        /* width: 30%; */
+    }
+}
+
+
+
+/* height */
+@media (max-height: 750px) {
+    #about .images .big-image-container img.big {
+        height: 80vh;
+        width: auto;
     }
 }
