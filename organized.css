@@ -173,7 +173,7 @@ main>section {
     /*70px + 20px(animation)*/
     padding: 0 20px;
     top: -20px;
-    animation: fadeInUp 0.7s ease forwards;
+    animation: fadeInUp 1s ease forwards;
     animation-delay: var(--delay, 0s);
     opacity: 0;
     /* fading in and up animation */
