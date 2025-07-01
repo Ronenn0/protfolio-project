@@ -170,18 +170,11 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .main-header nav {
-        /* width: 30%; */
-    }
 }
 
-
-
-/* height */
 @media (max-height: 750px) {
-    #about .images .big-image-container img.big {
-        height: 80vh;
+    #about .images input[type="checkbox"]:checked+label>.big-image-container>img.big {
+        height: 70vh;
         width: auto;
     }
 }
