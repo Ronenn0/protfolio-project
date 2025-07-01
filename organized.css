@@ -160,7 +160,8 @@ main {
 }
 
 main>section {
-    scroll-margin-top: var(--main-header-height);
+    scroll-margin-top: calc(var(--main-header-height) + 70px);
+    /* the 70px is the margin-top*/
     width: 100vw;
     height: auto;
     /* max-height: 900px; */
@@ -172,6 +173,7 @@ main>section {
     padding: 0 20px;
 }
 
+/* helper span to make the h1 section title sticky. */
 main>section>h1.section-title span {
     position: sticky;
     top: calc(var(--main-header-height));
@@ -191,8 +193,7 @@ main>section>h1.section-title span {
 }
 
 main>section>h1.section-title {
-    /* position: absolute;
-    top: -80px; */
+
     position: absolute;
     top: -80px;
     text-align: center;
@@ -449,4 +450,94 @@ main>section>h1.section-title {
     ;
 }
 
-#education>section * {}
+/* skills */
+
+
+#skills .technical-skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 500px));
+    justify-content: center;
+    gap: min(4vw, 60px);
+}
+
+#skills .technical-skills .skill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+#skills .technical-skills .skill .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#skills .technical-skills .skill img {
+    width: clamp(30px, 5vw, 60px);
+
+    height: minmax(5vw, 20px);
+    object-fit: fill;
+}
+
+#skills .technical-skills .skill .right-side .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &>h3 {
+        font-size: clamp(1rem, 1.2vw, 1.3rem);
+    }
+
+    &>span {}
+
+}
+
+#skills .technical-skills .skill .right-side .percentage-view {
+    height: 15px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#skills .technical-skills .skill .right-side .percentage-view div {
+    background-color: var(--secondary-color);
+    /* width: 95%; */
+    height: 100%;
+}
+
+.html {
+    width: 95%;
+}
+
+.css {
+    width: 85%;
+}
+
+.js {
+    width: 70%;
+}
+
+.csharp {
+    width: 75%;
+}
+
+.aspnet {
+    width: 70%;
+}
+
+.python {
+    width: 50%;
+}
+
+.git {
+    width: 20%;
+}

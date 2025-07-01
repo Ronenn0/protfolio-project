@@ -23,6 +23,25 @@
     }
 }
 
+@media (max-width: 550px) {
+    #skills {
+        padding: 0 50px;
+    }
+
+    #skills .technical-skills {
+        grid-template-columns: minmax(10rem, 500px);
+        gap: max(5vw, 30px);
+    }
+
+    #skills .technical-skills .skill.css {
+        grid-row: 2/3;
+    }
+
+    #skills .technical-skills .skill.js {
+        grid-row: 3/4;
+    }
+}
+
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 767.98px) {
