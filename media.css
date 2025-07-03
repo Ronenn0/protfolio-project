@@ -160,8 +160,12 @@
         margin: 0 auto;
     }
 
-    body * {
+    main * {
         max-width: var(--max-width);
+    }
+
+    #about .images>label>.big-image-container {
+        max-width: none;
     }
 
     .main-header {
