@@ -408,6 +408,7 @@ main>section>h1.section-title {
     display: none;
     border-radius: 40px;
     margin-top: var(--main-header-height);
+    /* prevents the image to be under the header */
 }
 
 
