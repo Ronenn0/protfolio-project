@@ -113,6 +113,11 @@
         width: fit-content;
     }
 
+    #projects {
+        grid-template-columns: repeat(1, 0.8fr);
+        justify-content: center;
+    }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -164,9 +169,11 @@
 }
 
 
-@media(max-width: 1400px) {
-    #about .images {
-        /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+
+@media (min-width: 1550px) {
+    #projects {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1600px;
     }
 }
 
