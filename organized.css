@@ -863,7 +863,8 @@ main>section>h1.section-title {
         position: absolute;
         height: 100%;
         display: inline-block;
-        background-color: black;
+        background-color: var(--secondary-color);
+        opacity: 0.8;
     }
 }
 
@@ -951,6 +952,8 @@ main>section>h1.section-title {
 
 #projects .project img {
     width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
     height: auto;
     /* filter: blur(2px) saturate(60%); */
     filter: blur(1px);
