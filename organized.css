@@ -837,6 +837,7 @@ main>section>h1.section-title {
     gap: 5px;
     white-space: nowrap;
 
+    span,
     time {
         color: var(--secondary-color);
     }
