@@ -113,11 +113,95 @@
         width: fit-content;
     }
 
-    #projects {
+    #projects>.container {
         grid-template-columns: repeat(1, 0.8fr);
         justify-content: center;
     }
 
+    /* re arrange projects based on time */
+    #projects .project.particles-effect {
+        /* order 7 */
+        grid-row: 7/8;
+        grid-column: 1/2;
+    }
+
+    #projects .project.math-game {
+        /* order 8 */
+        grid-row: 8/9;
+        grid-column: 1/2;
+    }
+
+    #projects .project.facebook {
+        /* order 9 */
+        grid-row: 9/10;
+        grid-column: 1/2;
+    }
+
+    #projects .project.miralMemories {
+        /* order 10 */
+        grid-row: 10/11;
+        grid-column: 1/2;
+    }
+
+    /* sort from new to old */
+    #projects #sort-from-new-to-old:checked~.container {
+
+        /* 1 column */
+        .project.youtube {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .project.miralMemories {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .project.facebook {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        .project.math-game {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        .project.particles-effect {
+            grid-row: 5;
+            grid-column: 1;
+        }
+
+        .project.genetic-algorithm {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+        .project.aim-particles {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        .project.xo-game {
+            grid-row: 8;
+            grid-column: 1;
+        }
+
+        .project.snake-game {
+            grid-row: 9;
+            grid-column: 1;
+        }
+
+        .project.minesweaper {
+            grid-row: 10;
+            grid-column: 1;
+        }
+
+        .project.calculator {
+            grid-row: 11;
+            grid-column: 1;
+        }
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -170,10 +254,91 @@
 
 
 
-@media (min-width: 1550px) {
-    #projects {
+@media (min-width: 1400px) {
+    #projects>.container {
         grid-template-columns: repeat(4, 1fr);
-        max-width: 1600px;
+        max-width: 1400px;
+    }
+
+    /* re arrange projects based on time */
+    #projects .project.particles-effect {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    #projects .project.math-game {
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    #projects .project.facebook {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    #projects .project.miralMemories {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    /* sort from new to old */
+    #projects #sort-from-new-to-old:checked~.container {
+
+        /* 4 column */
+        .project.youtube {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .project.miralMemories {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .project.facebook {
+            grid-row: 1;
+            grid-column: 3;
+        }
+
+        .project.math-game {
+            grid-row: 1;
+            grid-column: 4;
+        }
+
+        .project.particles-effect {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .project.genetic-algorithm {
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .project.aim-particles {
+            grid-row: 2;
+            grid-column: 3;
+        }
+
+        .project.xo-game {
+            grid-row: 2;
+            grid-column: 4;
+        }
+
+        .project.snake-game {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        .project.minesweaper {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .project.calculator {
+            grid-row: 3;
+            grid-column: 3;
+        }
     }
 }
 

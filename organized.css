@@ -646,11 +646,168 @@ main>section>h1.section-title {
 /* projects */
 
 #projects {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects #sort-new-to-old-label {
+    /* border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    transition: all 0.15s;
+    */
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* center them */
+#projects #sort-new-to-old-label::before,
+#projects #sort-new-to-old-label::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#projects #sort-new-to-old-label::after {
+    content: 'Sort from New to Old';
+    left: calc(100% + 10px);
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: 0.2px;
+}
+
+#projects #sort-new-to-old-label::before {
+    content: '';
+    border-radius: 30px;
+    width: 35px;
+    height: 28px;
+    background-color: var(--secondary-color);
+    transform-origin: center;
+    opacity: 0.2;
+}
+
+#projects #sort-from-new-to-old:checked~#sort-new-to-old-label::before {
+    transform: translate(-100%, -50%);
+    left: 100%;
+    opacity: 1;
+}
+
+#projects #sort-from-new-to-old:not(:checked)~#sort-new-to-old-label:hover::before {
+    opacity: 0.6;
+    animation: moveLeftAndRight 2s ease-in-out infinite;
+}
+
+#projects #sort-from-new-to-old:checked~#sort-new-to-old-label::after {
+    content: 'Sorted from New to Old!';
+    color: var(--secondary-color);
+}
+
+#projects #sort-from-new-to-old:not(:checked)~#sort-new-to-old-label:hover::after {
+    animation: rotateExcited 0.2s normal infinite;
+}
+
+
+@keyframes moveLeftAndRight {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: 30%;
+    }
+
+}
+
+@keyframes rotateExcited {
+
+    0%,
+    100% {
+        rotate: 10deg;
+    }
+
+    50% {
+        rotate: -10deg;
+    }
+}
+
+#projects #sort-from-new-to-old:checked~.container {
+    .project.youtube {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .project.miralMemories {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .project.facebook {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .project.math-game {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .project.particles-effect {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .project.genetic-algorithm {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .project.aim-particles {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .project.xo-game {
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+
+    .project.snake-game {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    .project.minesweaper {
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+
+    .project.calculator {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+}
+
+
+#projects>.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
+    max-width: 900px;
     gap: 25px;
+    width: 100%;
 }
 
 
@@ -665,16 +822,131 @@ main>section>h1.section-title {
 #projects .project>* {
     padding: 0 15px;
     order: auto;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
 }
 
 #projects .project header {
     grid-row: 2/3;
+    margin-bottom: 10px;
+}
+
+#projects .project header p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+
+    span {
+        color: var(--secondary-color);
+    }
+
+    span.ai-percentage {
+        width: 50%;
+        height: 10px;
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    span.ai-percentage::before {
+        /* content: '0%'; */
+        transform: translateY(-100%);
+        position: absolute;
+        animation: jumpUpAndDown 1s linear infinite;
+    }
+
+    span.ai-percentage::after {
+        content: '';
+        width: 1%;
+        position: absolute;
+        height: 100%;
+        display: inline-block;
+        background-color: black;
+    }
+}
+
+/* Percentage of AI used on projects for each project */
+#projects .project.youtube span.ai-percentage,
+#projects .project.minesweaper span.ai-percentage,
+#projects .project.snake-game span.ai-percentage,
+#projects .project.math-game span.ai-percentage,
+#projects .project.calculator span.ai-percentage,
+#projects .project.aim-particles span.ai-percentage,
+#projects .project.particles-effect span.ai-percentage,
+#projects .project.xo-game span.ai-percentage,
+#projects .project.genetic-algorithm span.ai-percentage {
+    &::before {
+        content: '0%';
+    }
+
+    &::after {
+        width: 1%;
+    }
+}
+
+#projects .project.miralMemories span.ai-percentage {
+    &::before {
+        content: '80%';
+    }
+
+    &::after {
+        width: 80%;
+    }
+}
+
+#projects .project.facebook span.ai-percentage {
+    &::before {
+        content: '7%';
+    }
+
+    &::after {
+        width: 10%;
+    }
+}
+
+/* re arrange projects based on time */
+#projects .project.particles-effect {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+#projects .project.math-game {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+#projects .project.facebook {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+#projects .project.miralMemories {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+
+@keyframes jumpUpAndDown {
+
+    0%,
+    100% {
+        transform: translateY(-105%);
+    }
+
+    20% {
+        transform: translateY(-80%);
+    }
+
+    80% {
+        transform: translateY(-120%);
+    }
 }
 
 #projects .project h2 {
-    font-size: clamp(1.3rem, 2vw, 1.5rem);
-    margin: 10px 0;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    margin: 6px 0;
 }
 
 #projects .project img {
@@ -686,16 +958,28 @@ main>section>h1.section-title {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-#projects .project p {
-    margin-bottom: 10px;
-    text-align: justify;
+#projects .project>p {
     line-height: 1.3;
+    margin-left: 15px;
+    height: fit-content;
+    position: relative;
+}
+
+#projects .project>p::before {
+    content: 'description';
+    position: absolute;
+    top: 50%;
+    transform: translateX(-80%) translateY(-50%) rotate(270deg);
+    font-size: clamp(0.55rem, 0.7vw, 0.7rem);
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+
 }
 
 #projects .project .links {
     display: flex;
-    gap: 30px;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin: 10px 0 15px 15px;
 }
 
 #projects .project .links a {
