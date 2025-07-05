@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ronenn0.github.io/protfolio-project/sitemap.xml
