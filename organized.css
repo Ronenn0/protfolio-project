@@ -240,7 +240,7 @@ main>section>h1.section-title span {
     background-color: var(--background-color-light);
     display: block;
     color: var(--secondary-color);
-    font-size: clamp(2rem, 2vw, 2.2rem);
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
 }
 
 main>section>h1.section-title {
@@ -1051,6 +1051,8 @@ aside.move-up a {
     align-self: center;
 }
 
+
+
 #faq>div {
     width: 100%;
 }
@@ -1061,13 +1063,13 @@ aside.move-up a {
     border-radius: 3px;
     color: var(--secondary-color);
     padding: 5px 10px;
+    padding-right: 35px;
     position: relative;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
     cursor: pointer;
     letter-spacing: 0.2px;
     transition: all 0.15s;
     display: flex;
-    opacity: 0.7;
 }
 
 #faq label.question::selection {
