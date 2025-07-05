@@ -464,7 +464,7 @@ main>section>h1.section-title {
     max-width: 700px;
 }
 
-#about section.text h1 {
+#about section.text h3 {
     font-size: clamp(1.3rem, 2vw, 2rem);
     text-align: left;
 }
@@ -538,7 +538,7 @@ main>section>h1.section-title {
     font-size: clamp(1rem, 1vw, 1.2rem);
 }
 
-#education section h1.education-type {
+#education section h2.education-type {
     font-size: clamp(1.3rem, 1.3vw, 1.5rem);
     margin-bottom: 8px;
 }
