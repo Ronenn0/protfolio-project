@@ -62,7 +62,7 @@
             <span class="middle-line"></span>
             <span class="bottom-line"></span>
         </label>
-        <h1><a href="#home">Ronen</a></h1>
+        <h1><a href="resume/Ronen_Azam_Resume_EN.pdf" download>Ronen</a></h1>
         <nav>
             <ul class="links-list">
                 <li>
@@ -83,6 +83,10 @@
                 <li>
                     <a href="#faq">FAQ</a>
                 </li>
+                <li>
+                    <a href="#contact-me">Contact</a>
+                </li>
+
             </ul>
         </nav>
     </header>
@@ -91,7 +95,7 @@
         <section id="home">
             <div class="left-side">
                 <h1>Hi,<br> I'am <span>Ronen</span><Br> Fullstack Developer</h1>
-                <input type="button" value="Connect" id="connect">
+                <a href="#contact-me" id="connect">Get in touch</a>
                 <div class="social-media">
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -632,9 +636,9 @@
 
             <!-- question 1 -->
             <div>
+                <input type="checkbox" id="question-1" hidden>
                 <label for="question-1" class="question">Was your portfolio website built using JavaScript or any
                     frameworks?</label>
-                <input type="checkbox" id="question-1" hidden>
                 <p class="answer">
                     No, this entire portfolio website was built using only HTML and CSS, without a single line of
                     JavaScript. It’s
@@ -644,8 +648,9 @@
 
             <!-- question 2 -->
             <div>
-                <label for="question-2" class="question">What types of projects have you developed?</label>
                 <input type="checkbox" id="question-2" hidden>
+                <label for="question-2" class="question">What types of projects have you developed?</label>
+
                 <p class="answer">
                     I’ve developed a wide range of projects—from classic games like Snake and XO, to interactive web
                     apps and
@@ -657,8 +662,8 @@
 
             <!-- question 3 -->
             <div>
-                <label for="question-3" class="question">What technologies are you most experienced with?</label>
                 <input type="checkbox" id="question-3" hidden>
+                <label for="question-3" class="question">What technologies are you most experienced with?</label>
                 <p class="answer">
                     I specialize in HTML, CSS, JavaScript, React, Node.js, Python, SQL, and MongoDB. I also have
                     experience with C#
@@ -668,8 +673,8 @@
 
             <!-- question 4 -->
             <div>
-                <label for="question-4" class="question">What makes you different from other developers?</label>
                 <input type="checkbox" id="question-4" hidden>
+                <label for="question-4" class="question">What makes you different from other developers?</label>
                 <p class="answer">
                     My background combines military leadership and real-world problem-solving skills with hands-on
                     technical
@@ -680,8 +685,9 @@
 
             <!-- question 5 -->
             <div>
-                <label for="question-5" class="question">Are your projects open source?</label>
                 <input type="checkbox" id="question-5" hidden>
+                <label for="question-5" class="question">Are your projects
+                    open source?</label>
                 <p class="answer">
                     Yes! Most of my projects are open source and available on my <a href="https://github.com/Ronenn0"
                         target="_blank" rel="noopener noreferrer">GitHub profile</a>. You’re welcome to explore, use, or
@@ -692,9 +698,9 @@
 
             <!-- question 6 -->
             <div>
+                <input type="checkbox" id="question-6" hidden>
                 <label for="question-6" class="question">How can I contact you for collaboration or job
                     opportunities?</label>
-                <input type="checkbox" id="question-6" hidden>
                 <p class="answer">
                     Feel free to reach out via the “Connect” button on my homepage, or message me on <a
                         href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> for any
@@ -704,8 +710,8 @@
 
             <!-- question 7 -->
             <div>
-                <label for="question-7" class="question">Can I view the code for your portfolio website?</label>
                 <input type="checkbox" id="question-7" hidden>
+                <label for="question-7" class="question">Can I view the code for your portfolio website?</label>
                 <p class="answer">
                     Yes! The source code for this portfolio is available on my <a
                         href="https://github.com/Ronenn0/protfolio-project" target="_blank"
@@ -716,21 +722,123 @@
 
             <!-- question 8 -->
             <div>
-                <label for="question-8" class="question">What do you enjoy most about web development?</label>
                 <input type="checkbox" id="question-8" hidden>
+                <label for="question-8" class="question">What do you enjoy most about web development?</label>
                 <p class="answer">
                     I enjoy turning ideas into real, interactive experiences that people can use and benefit from.
                     Solving problems
                     creatively and seeing my work make an impact is what motivates me most.
                 </p>
             </div>
+        </section>
 
+        <section id="contact-me">
+            <h1 class="section-title"><span>Contact Form</span></h1>
+            <form action="">
+                <header>
+                    <h5>CONTACT</h5>
+                    <legend>Let's work together</legend>
+                    <p>
+                        Ready to start something great? Let’s work together! Fill out the form below to share your
+                        project ideas, collaboration
+                        requests, or partnership opportunities. I’m excited to connect and turn your vision into
+                        reality—let’s make it happen!
+                    </p>
+                </header>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="full-name" required></input>
+                        <label for="full-name" class="required">Full Name</label>
+                    </div>
 
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email" class="required">Email</label>
+                    </div>
 
+                    <div class="form-group">
+                        <input type="text" id="company">
+                        <label for="company">Company/Organization</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone-number">
+                        <label for="phone-number">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <select for="opportunity-type">
+                        <option disabled selected hidden>Type of Opportunity</option>
+                        <option>Job Offer</option>
+                        <option>Freelance</option>
+                        <option>Collaboration</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="" id="message" minlength="40" maxlength="500" rows="7"
+                        placeholder="Max. 500 characters" required></textarea>
+                    <label for="message" class="required">Message</label>
+
+                </div>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
+
     <aside class="move-up"><a href="#top">&#8593;</a></aside>
-    <footer></footer>
+    <footer>
+        <p class="copyright">&copy; 2025 Ronen Azam. All rights reserved.</p>
+        <div class="footer-content">
+            <ul class="links">
+                <li>
+                    <a href="mailto:ronenazam.dev@gmail.com">📧 Email</a>
+
+                </li>
+                <li>
+                    <a href="https://github.com/Ronenn0" target="_blank" rel="noopener">💻 GitHub</a>
+
+                </li>
+                <li>
+                    <a href="https://ronenn0.github.io/protfolio-project" target="_blank" rel="noopener">🌐
+                        Portfolio</a>
+
+                </li>
+                <li>
+                    <a href="resume/Ronen_Azam_Resume_EN.pdf" download>📄 Download Resume</a>
+                </li>
+            </ul>
+            <p>Thank you for visiting my portfolio. Feel free to reach out for collaboration, freelance work, or just to
+                connect.
+                Let's build something amazing together!</p>
+
+            <ul class="navigation">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About me</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

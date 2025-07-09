@@ -4,24 +4,6 @@
 
 /* break points */
 
-/* so small devices */
-@media (max-width: 350px) {
-    #home {
-        flex-direction: column;
-    }
-
-    #home .left-side {
-        align-self: flex-start;
-    }
-
-    #home .left-side #connect {
-        max-width: 100px;
-    }
-
-    #home .blob-container {
-        width: 70vw;
-    }
-}
 
 @media (max-width: 550px) {
     #skills {
@@ -39,6 +21,21 @@
 
     #skills .technical-skills .skill.js {
         grid-row: 3/4;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    #home .blob-container {
+        border-radius: 50%;
+        width: 70vw;
+    }
+
+    #home .left-side {
+        align-self: center;
+        order: 2;
+        scale: 1.5;
     }
 }
 
@@ -80,21 +77,25 @@
         padding: 10px;
     }
 
-    #hamburger-checkbox:checked~#hamburger:hover .upper-line {
+    #hamburger-checkbox:checked~#hamburger .upper-line,
+    #hamburger-checkbox:not(:checked)~#hamburger:hover .upper-line {
         transform-origin: top right;
         transform: rotateZ(-45deg);
     }
 
 
-    #hamburger-checkbox:checked~#hamburger:hover .middle-line {
+    #hamburger-checkbox:checked~#hamburger .middle-line,
+    #hamburger-checkbox:not(:checked)~#hamburger:hover .middle-line {
         transform: translateY(3px);
         opacity: 0;
     }
 
-    #hamburger-checkbox:checked~#hamburger:hover .bottom-line {
+    #hamburger-checkbox:checked~#hamburger .bottom-line,
+    #hamburger-checkbox:not(:checked)~#hamburger:hover .bottom-line {
         transform-origin: bottom right;
         transform: rotateZ(45deg);
     }
+
 
 
 
@@ -201,6 +202,11 @@
             grid-row: 11;
             grid-column: 1;
         }
+    }
+
+    /* contact me */
+    #contact-me form .form-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
