@@ -339,8 +339,8 @@ main>section>h1.section-title {
 /* social media icons */
 #home .left-side .social-media a svg *,
 #home .left-side .social-media a svg {
-    width: min(2vw, 30px);
-    height: min(2vw, 30px);
+    width: min(3vw, 30px);
+    height: min(3vw, 30px);
     fill: var(--background-color-dark);
 }
 
@@ -1110,7 +1110,7 @@ aside.move-up a {
     transition: all 0.15s;
 }
 
-@keyframes animateAfter {
+@keyframes dance {
 
     0%,
     100% {
@@ -1142,7 +1142,7 @@ aside.move-up a {
 }
 
 #faq input[type="checkbox"]:checked+label.question:hover::after {
-    animation: animateAfter 1s linear infinite;
+    animation: dance 1s linear infinite;
 }
 
 #faq input[type="checkbox"]:not(checked)+label.question:hover::after {
@@ -1229,7 +1229,7 @@ aside.move-up a {
 
 #contact-me form header h5 {
     font-size: clamp(0.8rem, 2vw, 1.1rem);
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
 }
 
 #contact-me form header p {
@@ -1261,7 +1261,7 @@ aside.move-up a {
 #contact-me form input,
 #contact-me form select,
 #contact-me form textarea {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     padding: 5px 15px;
     position: relative;
     width: 100%;
@@ -1274,6 +1274,8 @@ aside.move-up a {
 #contact-me form .form-group *:focus {
     border: 1px solid var(--secondary-color);
 }
+
+
 
 #contact-me form .form-group *:focus+label,
 #contact-me form .form-group select:focus {
@@ -1327,16 +1329,16 @@ aside.move-up a {
     padding: 3px 0;
     font-size: clamp(1.2rem, 2vw, 1.7rem);
     cursor: pointer;
-    color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    background-color: white;
     transition: all 0.15s;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 #contact-me form button[type="submit"]:hover {
-    background-color: var(--secondary-color);
-    color: white;
+    /* animation: dance 1s linear infinite; */
+    filter: brightness(80%);
 }
 
 #contact-me form .required::after {
@@ -1356,6 +1358,7 @@ body>footer {
     font-size: clamp(0.8rem, 2vw, 1.1rem);
     color: white;
 }
+
 
 body>footer ul {
     list-style-type: none;
@@ -1377,10 +1380,8 @@ body>footer .footer-content {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    gap: 60px;
+    gap: 30px;
 }
-
-
 
 body>footer .footer-content ul {
     flex: 1;

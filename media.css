@@ -77,21 +77,18 @@
         padding: 10px;
     }
 
-    #hamburger-checkbox:checked~#hamburger .upper-line,
-    #hamburger-checkbox:not(:checked)~#hamburger:hover .upper-line {
+    #hamburger-checkbox:checked~#hamburger .upper-line {
         transform-origin: top right;
         transform: rotateZ(-45deg);
     }
 
 
-    #hamburger-checkbox:checked~#hamburger .middle-line,
-    #hamburger-checkbox:not(:checked)~#hamburger:hover .middle-line {
+    #hamburger-checkbox:checked~#hamburger .middle-line {
         transform: translateY(3px);
         opacity: 0;
     }
 
-    #hamburger-checkbox:checked~#hamburger .bottom-line,
-    #hamburger-checkbox:not(:checked)~#hamburger:hover .bottom-line {
+    #hamburger-checkbox:checked~#hamburger .bottom-line {
         transform-origin: bottom right;
         transform: rotateZ(45deg);
     }
