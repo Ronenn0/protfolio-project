@@ -26,6 +26,7 @@ html {
 
 body {
     overflow-x: hidden;
+    position: relative;
 }
 
 * {
@@ -43,8 +44,8 @@ body {
 
 label#dark-mode-toggler {
     position: fixed;
-    left: 3px;
-    top: 8px;
+    top: calc(var(--main-header-height) / 2);
+    transform: translateY(-50%);
     z-index: 10000;
     border: none;
 }
