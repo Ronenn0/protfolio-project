@@ -914,9 +914,10 @@ main>section>h1.section-title {
         width: 50%;
         height: 10px;
         display: inline-block;
-        border: 1px solid #000;
+        border: 1px solid var(--primary-background-color);
         border-radius: 2px;
         position: relative;
+        background-color: var(--primary-background-color);
     }
 
     span.ai-percentage::before {
@@ -1387,7 +1388,7 @@ aside.move-up a {
     border-radius: 10px;
     transition: all 0.15s;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--opposite-primary-color);
 }
 
 #contact-me form button[type="submit"]:hover {
