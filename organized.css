@@ -914,7 +914,7 @@ main>section>h1.section-title {
         width: 50%;
         height: 10px;
         display: inline-block;
-        border: 1px solid var(--primary-background-color);
+        border: 1px solid var(--box-shadow-color);
         border-radius: 2px;
         position: relative;
         background-color: var(--primary-background-color);
