@@ -60,7 +60,7 @@
     #hamburger-checkbox:checked~nav {
         position: absolute;
         top: var(--main-header-height);
-        background-color: black;
+        background-color: var(--secondary-background-color);
         left: 0;
         right: 0;
         display: block;
