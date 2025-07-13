@@ -15,8 +15,6 @@
     --main-header-height: 70px;
 
     --box-shadow-color: rgba(0, 0, 0, 0.3);
-
-
 }
 
 html {
@@ -38,7 +36,6 @@ body {
     color: var(--primary-color);
 }
 
-
 /* toggle dark-mode */
 
 
@@ -55,7 +52,9 @@ label#dark-mode-toggler svg {
     border-radius: 50%;
     transition: all 0.2s;
 
-    background-color: var(--secondary-background-color);
+    * {
+        fill: var(--opposite-background-color);
+    }
 }
 
 label#dark-mode-toggler svg:hover {
@@ -73,6 +72,7 @@ label#dark-mode-toggler svg:hover {
     --opposite-primary-color: black;
     --box-shadow-color: rgba(255, 255, 255, 0.3);
 }
+
 
 /* #toggle-dark-mode:checked~footer {
     background-color: #0556a7;
