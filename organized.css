@@ -1464,7 +1464,7 @@ body>footer .footer-content ul.links::before {
 
 
 /* Website Intro */
-body {
+/* body {
     top: 100vh;
     overflow: hidden;
     animation: showSite 0s linear forwards 2.1s;
@@ -1577,4 +1577,4 @@ body {
     to {
         display: none;
     }
-}
+} */
