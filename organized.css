@@ -684,11 +684,11 @@ main>section>h2.section-title {
 }
 
 .html {
-    width: 95%;
+    width: 90%;
 }
 
 .css {
-    width: 85%;
+    width: 90%;
 }
 
 .js {
@@ -696,11 +696,11 @@ main>section>h2.section-title {
 }
 
 .csharp {
-    width: 75%;
+    width: 50%;
 }
 
 .aspnet {
-    width: 70%;
+    width: 50%;
 }
 
 .python {
@@ -708,7 +708,7 @@ main>section>h2.section-title {
 }
 
 .git {
-    width: 20%;
+    width: 80%;
 }
 
 
