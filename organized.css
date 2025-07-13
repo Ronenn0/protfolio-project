@@ -1461,3 +1461,120 @@ body>footer .footer-content ul.links::before {
     content: 'Links';
     font-size: 70%;
 }
+
+
+/* Website Intro */
+body {
+    top: 100vh;
+    overflow: hidden;
+    animation: showSite 0s linear forwards 2.1s;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.website-intro {
+    display: flex;
+    position: absolute;
+    top: -60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    animation: disappear 0.45s ease-in forwards 1.4s;
+    opacity: 1;
+
+    * {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.website-intro img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animateIntroImg 0s linear 0.9s forwards;
+
+}
+
+.website-intro .loading {
+    opacity: 0;
+    width: 180px;
+    height: 5px;
+    border: 1px solid var(--secondary-color);
+    position: relative;
+    animation: decreaseWidth 0.5s ease-in forwards 1s, show 0s linear forwards 1s;
+}
+
+.website-intro .loading::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--secondary-color);
+    animation: fillWidth 0.2s ease-in forwards 1s;
+}
+
+@keyframes fillWidth {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes decreaseWidth {
+    to {
+        width: 0;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateIntroImg {
+    to {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showSite {
+    to {
+        top: 0;
+        overflow-y: auto;
+    }
+}
+
+@keyframes remove {
+    to {
+        display: none;
+    }
+}

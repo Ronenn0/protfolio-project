@@ -1,0 +1,161 @@
+👤 RONEN AZAM  
+💻 Fullstack Developer | Frontend & Backend Engineer
+
+🎓 EDUCATION
+🏫 High School (2017–2019)
+- Computer Science & Chemistry Track
+
+- 10 units in Computer Science
+
+- 5 units in Math, English, and Chemistry
+
+- Final GPA: 91
+
+- Final project in C# using ASP.NET — excellent work, though skills need refreshing
+
+- Integrated HTML, CSS, and JS in the final system
+
+💻 Fullstack Development Program (2025–2026) – HackerU
+
+- Currently 2 months in
+
+- Already mastered HTML and CSS
+
+- Learning and mastering all topics through structured coursework and intensive YouTube courses
+
+- Proactively expanding knowledge beyond class, including JavaScript, React, Node.js, MongoDB, and more
+
+🧠 PSYCHOMETRIC EXAM (Taken in 2020)
+- Total Score: 677
+
+- Quantitative: 698
+
+- Yael (Hebrew): 133
+
+👤 PROFILE
+Ambitious and self-driven Fullstack Developer with strong self-learning discipline and leadership under pressure.
+Completed military command training and led soldiers in high-stress combat situations.
+Currently enrolled in HackerU’s Fullstack Development program while mastering additional technologies independently.
+Fluent in Arabic (native), Hebrew, and English.
+
+🛠️ TECHNICAL SKILLS
+Languages & Technologies:
+
+- HTML
+
+- CSS
+
+- JavaScript
+
+- C# (needs refreshing)
+
+- ASP.NET (needs refreshing)
+
+- Python
+
+- SQL
+
+- MongoDB
+
+- Node.js
+
+- React (in progress)
+
+Tools & Environments:
+
+- Git & GitHub
+
+- Vercel
+
+- GitHub Pages
+
+- Visual Studio Code
+
+- Concepts & Abilities:
+
+- Responsive design
+
+- Scroll animations
+
+- Interactive UI
+
+- Canvas graphics
+
+- Object-Oriented Programming
+
+- UI layout planning
+
+🚀 PROJECT HIGHLIGHTS
+📌 Portfolio Website
+
+- Fully responsive personal site built with HTML and CSS
+
+- Includes animations, section transitions, and accessibility features
+
+📘 Facebook UI Clone
+
+- Accurate clone using Flexbox and Grid
+
+📺 YouTube Homepage Clone
+
+- Recreated responsive design mimicking YouTube layout
+
+🎮 Games (JavaScript):
+
+- Snake
+
+- XO
+
+- Calculator
+
+🪖 MILITARY EXPERIENCE
+- Fighter & Commander – Golani Brigade
+
+- Led troops during the October 7th war (Motsav Paga)
+
+- Completed 3 levels of commander training (trainee, commander, sergeant)
+
+- Demonstrated resilience, critical thinking, and tactical leadership under pressure
+
+- Sector Commander (Hapakist) – Border Police
+
+- Certified firearms instructor (May–July 2024)
+
+- Responsible for team training, operational discipline, and safety enforcement
+
+🗣️ LANGUAGES
+- Arabic – Native
+
+- Hebrew – Fluent
+
+- English – Fluent
+
+🧠 PERSONAL QUALITIES
+- Fast Learner
+
+- Problem Solver
+
+- Creative Thinker
+
+- Team Player
+
+- Responsible and Committed
+
+- Passionate about Clean and Accessible Code
+
+- Strong Leader in high-pressure environments
+
+- Skilled Instructor with real-world experience training individuals and teams
+
+
+📞 Contact Information
+
+📍 Location: Shefa-Amr, Israel
+
+📞 Phone: +972-558866421
+
+📧 Email: ronenazam.dev@gmail.com
+
+🌐 Portfolio: ronenn0.github.io/protfolio-project
+
+💻 GitHub: github.com/Ronenn0
