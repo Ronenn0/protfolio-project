@@ -188,7 +188,7 @@
             </div>
         </section>
         <section id="about">
-            <h1 class="section-title"><span>About</span></h1>
+            <h2 class="section-title"><span>About</span></h2>
             <div class="images first">
                 <!-- Image 1 -->
                 <input type="checkbox" id="checkbox1" hidden>
@@ -287,7 +287,7 @@
 
         </section>
         <section id="education">
-            <h1 class="section-title"><span>Education</span></h1>
+            <h2 class="section-title"><span>Education</span></h2>
             <section>
                 <h4 class="years">2017 – 2019</h4>
                 <h2 class="education-type">High School – Computer Science & Chemistry Track</h2>
@@ -353,7 +353,7 @@
 
         </section>
         <section id="skills">
-            <h1 class="section-title"><span>Skills</span></h1>
+            <h2 class="section-title"><span>Skills</span></h2>
             <div class="technical-skills">
                 <!-- TECHNICAL SKILLS SECTION -->
                 <div class="skill">
@@ -450,7 +450,7 @@
         </section>
         <section id="projects">
 
-            <h1 class="section-title"><span>Projects</span></h1>
+            <h2 class="section-title"><span>Projects</span></h2>
             <input type="checkbox" id="sort-from-new-to-old" hidden>
             <label for="sort-from-new-to-old" id="sort-new-to-old-label"></label>
             <div class="container">
@@ -646,7 +646,7 @@
         </section>
         <section id="faq">
 
-            <h1 class="section-title"><span>Frequenly Asked Questions</span></h1>
+            <h2 class="section-title"><span>Frequenly Asked Questions</span></h2>
 
             <!-- question 1 -->
             <div>
@@ -747,11 +747,11 @@
         </section>
 
         <section id="contact-me">
-            <h1 class="section-title"><span>Contact Form</span></h1>
-            <form action="">
+            <h2 class="section-title"><span>Contact Form</span></h2>
+            <form>
                 <header>
                     <h5>CONTACT</h5>
-                    <legend>Let's work together</legend>
+                    <h2>Let's work together</h2>
                     <p>
                         Ready to start something great? Let’s work together! Fill out the form below to share your
                         project ideas, collaboration
@@ -761,7 +761,7 @@
                 </header>
                 <div class="form-grid">
                     <div class="form-group">
-                        <input type="text" id="full-name" required></input>
+                        <input type="text" id="full-name" required>
                         <label for="full-name" class="required">Full Name</label>
                     </div>
 
@@ -782,7 +782,7 @@
                 </div>
 
                 <div class="form-group">
-                    <select for="opportunity-type">
+                    <select class="opportunity-type">
                         <option disabled selected hidden>Type of Opportunity</option>
                         <option>Job Offer</option>
                         <option>Freelance</option>
@@ -792,12 +792,12 @@
                 </div>
 
                 <div class="form-group">
-                    <textarea name="" id="message" minlength="40" maxlength="500" rows="7"
-                        placeholder="Max. 500 characters" required></textarea>
+                    <textarea id="message" minlength="40" maxlength="500" rows="7" placeholder="Max. 500 characters"
+                        required></textarea>
                     <label for="message" class="required">Message</label>
 
                 </div>
-                <button type="submit">Send</button>
+                <input type="submit" value="Send" id="send">
             </form>
         </section>
     </main>
