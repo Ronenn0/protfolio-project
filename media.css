@@ -376,3 +376,11 @@
         width: auto;
     }
 }
+
+@media (min-width: 3000px) {
+    #about .images {
+
+        grid-template-columns: repeat(2, minmax(50px, 150px));
+        grid-template-rows: repeat(2, minmax(100px, 300px));
+    }
+}
