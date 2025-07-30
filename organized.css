@@ -458,8 +458,6 @@ main>section>h2.section-title {
 
 #about .images img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     z-index: -1;
     /* Let browser decide */
 }
