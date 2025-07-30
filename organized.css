@@ -307,7 +307,7 @@ main>section>h2.section-title span {
     background-color: var(--primary-background-color);
     display: block;
     color: var(--secondary-color);
-    font-size: clamp(1.3rem, 2vw, 2.3rem);
+    font-size: clamp(1.3rem, 5vw, 2.3rem);
 }
 
 main>section>h2.section-title {
@@ -356,13 +356,13 @@ main>section>h2.section-title {
     border: none;
     animation: backgroundAnimation 10s ease-in infinite;
     /* animation */
-    transition: filter 0.1s;
+    transition: transform 0.15s;
     text-align: center;
     text-decoration: none;
 }
 
 #home #connect:hover {
-    filter: brightness(70%);
+    transform: translateY(-5px) scale(1.1);
 }
 
 
@@ -394,8 +394,13 @@ main>section>h2.section-title {
     width: min(3vw, 30px);
     height: min(3vw, 30px);
     fill: var(--opposite-background-color);
+    transition: transform 0.15s;
 }
 
+
+#home .left-side .social-media a svg:hover {
+    transform: translateY(-5px) scale(1.15);
+}
 
 
 
@@ -415,20 +420,7 @@ main>section>h2.section-title {
 
 .blob-container img {
     width: 100%;
-    object-fit: cover;
 }
-
-/* @keyframes borderBottomAnimation {
-
-    0%,
-    100% {
-        border-bottom-color: var(--secondary-color);
-    }
-
-    50% {
-        border-bottom-color: var(--third-color);
-    }
-} */
 
 /* about */
 
@@ -445,31 +437,34 @@ main>section>h2.section-title {
 #about .images {
     align-self: flex-start;
     display: grid;
-    width: fit-content;
     grid-template-columns: repeat(2, minmax(5vw, 100px));
-    grid-template-rows: repeat(2, minmax(10vw, 200px));
+    /* grid-template-rows: repeat(2, minmax(10vw, 200px)); */
     /* grid-template-rows: repeat(2, auto); */
     justify-content: center;
-    gap: 10px;
     border-radius: 20px;
     overflow: hidden;
+    gap: 10px;
 }
 
+
+#about .images label {
+    margin-bottom: -8px;
+    transition: transform 0.15s;
+}
+
+#about .images label:hover {
+    transform: scale(1.02);
+    filter: brightness(90%);
+}
 
 #about .images img {
     width: 100%;
     z-index: -1;
-    /* Let browser decide */
 }
 
 #about .images img.small {
     cursor: pointer;
     transition: all 0.15s;
-}
-
-#about .images img.small:hover {
-    filter: brightness(90%);
-    scale: 1.01;
 }
 
 
@@ -884,6 +879,13 @@ main>section>h2.section-title {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 4px 4px 10px var(--box-shadow-color), -1px -1px 10px rgba(87, 87, 87, 0.3);
+    transition: transform 0.15s;
+    position: relative;
+}
+
+#projects .project:hover {
+    transform: scale(1.05);
+
 }
 
 #projects .project>* {
